@@ -1,8 +1,6 @@
 <%@ include file="/init.jsp"%>
 
-<p>
-	<b><liferay-ui:message key="formulario-web.caption" /></b>
-</p>
+
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -19,7 +17,8 @@
 	<br />
 	<br />
 	<aui:form action="${vizualizarURL}">
-		<aui:input type="textarea" name="numero" />
+		<aui:input type="text" name="numero1" />
+		<aui:input type="text" name="numero2" />
 		<aui:button name="enviar" type="submit" value="Enviar" />
 
 	</aui:form>
