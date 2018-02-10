@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.jbaricot.formulario.service.impl.formularioLocalServiceImpl" id="com.jbaricot.formulario.service.formularioLocalService" />
+	<bean class="com.jbaricot.formulario.service.impl.formularioServiceImpl" id="com.jbaricot.formulario.service.formularioService" />
+	<bean class="com.jbaricot.formulario.service.persistence.impl.formularioPersistenceImpl" id="com.jbaricot.formulario.service.persistence.formularioPersistence" parent="basePersistence" />
+</beans>

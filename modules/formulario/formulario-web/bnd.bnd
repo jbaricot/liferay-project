@@ -1,0 +1,4 @@
+Bundle-Name: formulario-web
+Bundle-SymbolicName: com.jbaricot.formulario
+Bundle-Version: 1.0.0
+Export-Package: com.jbaricot.formulario.constants

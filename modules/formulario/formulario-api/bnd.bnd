@@ -1,0 +1,9 @@
+Bundle-Name: formulario-api
+Bundle-SymbolicName: com.jbaricot.formulario.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.jbaricot.formulario.exception,\
+	com.jbaricot.formulario.model,\
+	com.jbaricot.formulario.service,\
+	com.jbaricot.formulario.service.persistence
+-includeresource: META-INF/service.xml=../formulario-service/service.xml
