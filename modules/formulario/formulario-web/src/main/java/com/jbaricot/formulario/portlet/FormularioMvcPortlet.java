@@ -1,12 +1,17 @@
 package com.jbaricot.formulario.portlet;
 
-import com.jbaricot.formulario.constants.FormularioMvcPortletKeys;
-
-import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
+import java.io.IOException;
 
 import javax.portlet.Portlet;
+import javax.portlet.PortletException;
+import javax.portlet.RenderRequest;
+import javax.portlet.RenderResponse;
 
 import org.osgi.service.component.annotations.Component;
+
+import com.jbaricot.formulario.constants.FormularioMvcPortletKeys;
+import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
+import com.liferay.portal.kernel.util.ParamUtil;
 
 /**
  * @author jbari
@@ -19,5 +24,12 @@ import org.osgi.service.component.annotations.Component;
 		"javax.portlet.security-role-ref=power-user,user" }, service = Portlet.class)
 public class FormularioMvcPortlet extends MVCPortlet {
 	
+	@Override
+	
+	public void render(RenderRequest renderResquest, RenderResponse renderResponse ) throws IOException, PortletException{
+		String variable = ParamUtil.getString(renderResquest, "numero");
+		renderResquest.setAttribute("variable", variable);
+		super.render(renderResquest, renderResponse);
+	}
 	
 }
