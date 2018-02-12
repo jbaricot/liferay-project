@@ -1,0 +1,7 @@
+Bundle-SymbolicName: suma-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.suma.exception,\
+	com.liferay.suma.model,\
+	com.liferay.suma.service,\
+	com.liferay.suma.service.persistence

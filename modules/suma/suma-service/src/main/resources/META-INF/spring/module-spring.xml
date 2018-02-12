@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.liferay.suma.service.impl.pruebaLocalServiceImpl" id="com.liferay.suma.service.pruebaLocalService" />
+	<bean class="com.liferay.suma.service.impl.pruebaServiceImpl" id="com.liferay.suma.service.pruebaService" />
+	<bean class="com.liferay.suma.service.persistence.impl.pruebaPersistenceImpl" id="com.liferay.suma.service.persistence.pruebaPersistence" parent="basePersistence" />
+</beans>
